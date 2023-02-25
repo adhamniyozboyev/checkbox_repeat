@@ -15,18 +15,45 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   bool value = false;
-
+  bool value2 = false;
+  bool value3 = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Checkbox(
+          CheckboxListTile(
+            activeColor: Colors.black,
+             checkColor: Colors.green,
+            tileColor: Colors.blue,
+              title: Text('First'),
               value: value,
-              onChanged: (val) {
+              onChanged: (val1) {
                 setState(() {
-                  value = val!;
+                  value = val1!;
+                });
+              }),
+          CheckboxListTile(
+            activeColor: Colors.yellow,
+             checkColor: Colors.green,
+            tileColor: Colors.red,
+              title: Text('Second'),
+              value: value2,
+              onChanged: (val2) {
+                setState(() {
+                  value2 = val2!;
+                });
+              }),
+          CheckboxListTile(
+            activeColor: Colors.white,
+            checkColor: Colors.green,
+            tileColor: Colors.orange,
+              title: Text('Third'),
+              value: value3,
+              onChanged: (val3) {
+                setState(() {
+                  value3 = val3!;
                 });
               }),
         ],
