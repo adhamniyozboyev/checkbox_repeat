@@ -24,9 +24,9 @@ class _MyAppState extends State<MyApp> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           CheckboxListTile(
-            activeColor: Colors.black,
-             checkColor: Colors.green,
-            tileColor: Colors.blue,
+              activeColor: Colors.black,
+              checkColor: Colors.green,
+              tileColor: Colors.blue,
               title: Text('First'),
               value: value,
               onChanged: (val1) {
@@ -35,9 +35,9 @@ class _MyAppState extends State<MyApp> {
                 });
               }),
           CheckboxListTile(
-            activeColor: Colors.yellow,
-             checkColor: Colors.green,
-            tileColor: Colors.red,
+              activeColor: Colors.yellow,
+              checkColor: Colors.green,
+              tileColor: Colors.red,
               title: Text('Second'),
               value: value2,
               onChanged: (val2) {
@@ -46,9 +46,9 @@ class _MyAppState extends State<MyApp> {
                 });
               }),
           CheckboxListTile(
-            activeColor: Colors.white,
-            checkColor: Colors.green,
-            tileColor: Colors.orange,
+              activeColor: Colors.white,
+              checkColor: Colors.green,
+              tileColor: Colors.orange,
               title: Text('Third'),
               value: value3,
               onChanged: (val3) {
